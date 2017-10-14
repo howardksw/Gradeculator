@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/individual_page">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+
+
+
+
+            <LinearLayout
+                android:weightSum="4"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:paddingLeft="20sp"
+                    android:gravity="start"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="end|center_vertical"
+                        android:textSize="15sp"
+                        android:id="@+id/toolbar_cancel_individual"
+                        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical|end"
+                        android:text="Cancel"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                 android:paddingLeft="20sp"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:layout_width="0sp"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/toolbar_title_individual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:textColor="@color/text_color"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingRight="20sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:id="@+id/toolbar_save_individual"
+                        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical|end"
+                        android:text="Save"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <TableLayout
+            android:id="@+id/assignNameLayout"
+            android:paddingTop="20sp"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp"
+            >
+
+            <TableRow>
+                <TextView
+                    android:textColor="@color/text_color"
+                    android:text="@string/GradeName_label"
+                    android:paddingLeft="15sp"
+                    android:textSize="16sp"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <EditText
+                    android:textCursorDrawable="@null"
+                    android:layout_gravity="end"
+                    android:cursorVisible="false"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="25sp"
+                    android:gravity="right"
+                    android:inputType="text"
+                    android:id="@+id/igradeName"
+                    android:layout_weight="5"
+                    android:layout_width ="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint = "@string/GradeName_hint"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/hint_color"
+                    android:background="@android:color/transparent"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hint_color"/>
+
+        <TableLayout
+            android:id="@+id/dueLayout"
+            android:paddingTop="20sp"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp"
+            >
+
+            <TableRow>
+                <TextView
+                    android:textColor="@color/text_color"
+                    android:text="@string/dueDate_label"
+                    android:paddingLeft="15sp"
+                    android:textSize="16sp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    />
+
+                <LinearLayout
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="25sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0sp"
+                    android:layout_weight="5" >
+                    <TextView
+                        android:textColor="@color/hint_color"
+                        android:id="@+id/dueDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/dueDate_hint"
+                        android:textColorHint="@color/hint_color"/>
+
+                </LinearLayout>
+
+
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hint_color"/>
+
+        <TableLayout
+            android:id="@+id/total_point_layout"
+            android:paddingTop="20sp"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp"
+            >
+
+            <TableRow>
+                <TextView
+                    android:textColor="@color/text_color"
+                    android:text="@string/itotalPoints_label"
+                    android:paddingLeft="15sp"
+                    android:textSize="16sp"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <EditText
+                    android:textCursorDrawable="@null"
+                    android:layout_gravity="end"
+                    android:cursorVisible="false"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="25sp"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/itotalPoints"
+                    android:layout_weight="5"
+                    android:layout_width ="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint = "@string/point_label"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/hint_color"
+                    android:background="@android:color/transparent"
+                    />
+            </TableRow>
+        </TableLayout>
+
+
+        <View
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hint_color"/>
+
+
+        <TableLayout
+            android:id="@+id/complete_layout"
+            android:paddingTop="20sp"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp">
+
+            <TableRow>
+                <TextView
+                    android:textColor="@color/text_color"
+                    android:text="@string/status_label"
+                    android:layout_weight="4"
+                    android:layout_width ="0dp"
+                    android:paddingLeft="15sp"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <ToggleButton
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="25sp"
+                    android:id="@+id/complete_btn"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/toggle_selector"
+                    android:textSize="15sp"
+                    android:layout_height="25sp"
+                    android:layout_width="44.64sp"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:id="@+id/complete_line"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hint_color"/>
+
+
+        <TableLayout
+            android:id="@+id/gradeLayout"
+            android:paddingTop="20sp"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp"
+            >
+
+            <TableRow>
+                <TextView
+                    android:textColor="@color/text_color"
+                    android:text="@string/totalPoints_label"
+                    android:paddingLeft="15sp"
+                    android:textSize="16sp"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <EditText
+                    android:textCursorDrawable="@null"
+                    android:layout_gravity="end"
+                    android:cursorVisible="false"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="25sp"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/ipoint"
+                    android:layout_weight="5"
+                    android:layout_width ="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint = "@string/point_label"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/hint_color"
+                    android:background="@android:color/transparent"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hint_color"/>
+
+        <TableLayout
+            android:id="@+id/weightLayout"
+            android:paddingTop="20sp"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp"
+            >
+
+            <TableRow>
+                <TextView
+                    android:textColor="@color/text_color"
+                    android:text="@string/weight_label"
+                    android:paddingLeft="15sp"
+                    android:textSize="16sp"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="25sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0sp"
+                    android:layout_weight="5" >
+
+                    <EditText
+                        android:textCursorDrawable="@null"
+                        android:layout_gravity="end"
+                        android:cursorVisible="false"
+                        android:textSize="16sp"
+                        android:gravity="right"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/iweight"
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint = "@string/weight_hint"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color"
+                        android:background="@android:color/transparent"
+                        />
+                    <TextView
+                        android:text="%"
+                        android:textCursorDrawable="@null"
+                        android:layout_gravity="end"
+                        android:cursorVisible="false"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="2sp"
+                        android:gravity="right"
+                        android:inputType="numberDecimal"
+                        android:layout_width ="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:background="@android:color/transparent"
+                        />
+
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <View
+            android:id="@+id/weight_line"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hint_color"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

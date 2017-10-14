@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+
+
+
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_width="fill_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:paddingLeft="20sp"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_gravity="end|center_vertical"
+                    android:textSize="15sp"
+                    android:id="@+id/toolbar_cancel_classinfo"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical|end"
+                    android:text="@string/cancel_btn"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="20sp"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0sp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight"
+                    android:textColor="@color/text_color"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="20sp"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:id="@+id/toolbar_save_classinfo"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical|end"
+                    android:text="@string/save_btn"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:paddingTop="20sp"
+        android:paddingBottom="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:paddingRight="20sp"
+            android:textSize="16sp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equal_weight"
+            android:textColor="@color/text_color"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="15sp"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="@string/exam"
+            android:layout_weight="3"/>
+        <EditText
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@null"
+            android:layout_gravity="end"
+            android:paddingRight="5sp"
+            android:gravity="end"
+            android:textSize="16sp"
+            android:hint="50.0"
+            android:background="@android:color/transparent"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exam_edit_text"
+            android:layout_weight="1"/>
+        <TextView
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:layout_weight="2"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:gravity="left">
+
+            <ToggleButton
+                android:id="@+id/exam_btn"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/toggle_selector"
+                android:textSize="15sp"
+                android:layout_height="25sp"
+                android:layout_width="44.64sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint_color"/>
+
+    <LinearLayout
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="15sp"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz"
+            android:layout_weight="3"/>
+        <EditText
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@null"
+            android:paddingRight="5sp"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:hint="10.0"
+            android:background="@android:color/transparent"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/quiz_edit_text"
+            android:layout_weight="1"/>
+        <TextView
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:layout_weight="2"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:gravity="left">
+
+            <ToggleButton
+                android:id="@+id/quiz_btn"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/toggle_selector"
+                android:textSize="15sp"
+                android:layout_height="25sp"
+                android:layout_width="44.64sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint_color"/>
+
+    <LinearLayout
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="15sp"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="@string/assignment"
+            android:layout_weight="3"/>
+        <EditText
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@null"
+            android:paddingRight="5sp"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:hint="20.0"
+            android:background="@android:color/transparent"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/assignment_edit_text"
+            android:layout_weight="1"/>
+        <TextView
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:layout_weight="2"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:gravity="left">
+
+            <ToggleButton
+                android:id="@+id/assignment_btn"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/toggle_selector"
+                android:textSize="15sp"
+                android:layout_height="25sp"
+                android:layout_width="44.64sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint_color"/>
+
+    <LinearLayout
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="15sp"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="@string/project"
+            android:layout_weight="3"/>
+        <EditText
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@null"
+            android:paddingRight="5sp"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:hint="20.0"
+            android:background="@android:color/transparent"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/project_edit_text"
+            android:layout_weight="1"/>
+        <TextView
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:layout_weight="2"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:gravity="left">
+
+            <ToggleButton
+                android:id="@+id/project_btn"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/toggle_selector"
+                android:textSize="15sp"
+                android:layout_height="25sp"
+                android:layout_width="44.64sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint_color"/>
+
+    <LinearLayout
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="15sp"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:text="@string/extra_credit"
+            android:layout_weight="3"/>
+        <EditText
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@null"
+            android:paddingRight="5sp"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:hint="0.0"
+            android:background="@android:color/transparent"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/extra_edit_text"
+            android:layout_weight="1"/>
+        <TextView
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:layout_weight="2"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:gravity="left">
+
+            <ToggleButton
+                android:id="@+id/extra_btn"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/toggle_selector"
+                android:textSize="15sp"
+                android:layout_height="25sp"
+                android:layout_width="44.64sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint_color"/>
+
+    <TextView
+        android:textColor="@color/text_color"
+        android:text="@string/class_info"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingTop="15sp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+</LinearLayout>

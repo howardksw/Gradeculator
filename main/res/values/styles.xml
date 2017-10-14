@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionMenuTextColor">@color/text_color</item>
+        <item name="android:actionMenuTextAppearance">@style/customActionBar</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:datePickerStyle">@style/datepicker</item>
+    </style>
+
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/dark_2nd_blue</item>
+        <item name="android:textColorPrimary">@color/text_color</item>
+        <item name="android:textColorSecondary">@color/text_color</item>
+        <item name="android:colorForegroundInverse">@color/text_color</item>
+        <item name="android:textColorPrimaryInverse">@color/dark_1st_blue</item>
+        <item name="android:textColorSecondaryInverse">@color/dark_1st_blue</item>
+        <item name="colorPrimary">@color/dark_1st_blue</item>
+        <item name="colorPrimaryDark">@color/dark_2nd_blue</item>
+        <item name="colorAccent">@color/dark_3rd_blue</item>
+
+    </style>
+
+    <style name="customActionBar" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingRight">32sp</item>
+    </style>
+
+    <style name="Gradeculator_night" parent="AppTheme" >
+        <item name="android:background">@drawable/dark_background</item>
+        <item name="android:textColorSecondary">@color/text_color</item>
+        <item name="colorPrimaryDark">@color/dark_1st_blue</item>
+        <item name="colorAccent">@color/text_color</item>
+        <item name="android:textColorPrimaryInverse">@color/text_color</item>
+        <item name="android:textColorSecondaryInverse">@color/text_color</item>
+        <item name="android:colorForeground">@color/text_color</item>
+        <item name="colorPrimary">@color/dark_1st_blue</item>
+        <item name="android:colorBackground">@drawable/dark_background</item>
+        <item name="android:textColorPrimary">@color/text_color</item>
+    </style>
+
+    <style name="DisableElevation">
+        <item name="android:zAdjustment">normal</item>
+        <item name="android:translationZ">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowColor">@android:color/transparent</item>
+    </style>
+
+    <style name="PreviewStyle" parent="DisableElevation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+</resources>

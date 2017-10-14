@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="Gradeculator_night" parent="AppTheme">
+                <item name="colorPrimary">@color/dark_1st_blue</item>
+                <item name="android:textColorPrimary">@color/text_color</item>
+                <item name="android:colorBackground">@drawable/dark_background</item>
+                <item name="android:statusBarColor">@color/dark_1st_blue</item>
+                <item name="android:textColorSecondary">@color/text_color</item>
+                <item name="colorPrimaryDark">@color/dark_1st_blue</item>
+                <item name="colorAccent">@color/text_color</item>
+                <item name="android:textColorPrimaryInverse">@color/text_color</item>
+                <item name="android:textColorSecondaryInverse">@color/text_color</item>
+                <item name="android:colorForeground">@color/text_color</item>
+                <item name="android:navigationBarColor">@color/dark_1st_blue</item>
+        </style>
+</resources>

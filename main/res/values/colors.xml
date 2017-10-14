@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3445a8</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dark_1st_blue">#3b577d</color>
+    <color name="dark_2nd_blue">#44679f</color>
+    <color name="course_background">#4D44679f</color>
+    <color name="dark_3rd_blue">#C0D9E5</color>
+    <color name="text_color">#ddf5f7</color>
+    <color name="hint_color">#9EB0B1</color>
+    <color name="alter_color">#4DFCA180</color>
+</resources>

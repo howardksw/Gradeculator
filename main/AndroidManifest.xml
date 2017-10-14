@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.umd.cs.gradeculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Gradeculator_night">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddCourseActivity" android:screenOrientation="portrait"></activity>>
+        <activity android:name=".CourseDirActivity" android:screenOrientation="portrait"></activity>>
+        <activity android:name=".CategoryActivity" android:screenOrientation="portrait"></activity>>
+        <activity android:name=".ClassInfoActivity" android:screenOrientation="portrait"></activity>>
+        <activity android:name=".IndividualActivity" android:screenOrientation="portrait"></activity>>
+
+        <service android:name=".service.impl.ReminderBackgroundService" />
+        <service android:name=".service.impl.NotificationService" />
+        <receiver android:name=".service.impl.AlarmRecever"/>
+    </application>
+
+</manifest>

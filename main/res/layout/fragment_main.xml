@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+
+        <LinearLayout
+            android:weightSum="6"
+            android:layout_width="fill_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:gravity="start"
+                android:layout_weight="1.5"
+                android:layout_width="0sp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0sp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course"
+                    android:textColor="@color/text_color"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="20sp"
+                android:gravity="end"
+                android:layout_weight="1.5"
+                android:layout_width="0sp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_gravity="end|center_vertical"
+                    android:textSize="15sp"
+                    android:id="@+id/toolbar_add"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/add_adjust"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical|end"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/empty_view_main"
+        android:gravity="center_horizontal"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="15sp"
+                android:paddingBottom="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_main"/>
+
+            <TextView
+                android:id="@+id/empty_btn_main"
+                android:padding="8sp"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_main_btn"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <edu.umd.cs.gradeculator.RecycleViewWtEmpty
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/course_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </edu.umd.cs.gradeculator.RecycleViewWtEmpty>
+
+
+</LinearLayout>
+

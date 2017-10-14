@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="exam_view" type="id"/>
+    <item name="quiz_view" type="id"/>
+    <item name="assignment_view" type="id"/>
+    <item name="project_view" type="id"/>
+    <item name="extracredit_view" type="id"/>
+
+    <item name="exam_percentage" type="id"/>
+    <item name="quiz_percentage" type="id"/>
+    <item name="assignment_percentage" type="id"/>
+    <item name="project_percentage" type="id"/>
+    <item name="extracredit_percentage" type="id"/>
+
+    <item name="exam_item" type="id"/>
+    <item name="quiz_item" type="id"/>
+    <item name="assignment_item" type="id"/>
+    <item name="project_item" type="id"/>
+    <item name="extracredit_item" type="id"/>
+</resources>

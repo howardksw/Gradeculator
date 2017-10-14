@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/course_dir_all"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+
+        <LinearLayout
+            android:weightSum="8"
+            android:layout_width="fill_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:paddingLeft="20sp"
+                android:gravity="start|center_vertical"
+                android:layout_weight="2"
+                android:layout_width="0sp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_gravity="end|center_vertical"
+                    android:textSize="15sp"
+                    android:id="@+id/toolbar_back"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/back_edit"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical|end"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="4"
+                android:layout_width="0sp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/toolbar_course_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CMSC420"
+                    android:textColor="@color/text_color"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="end"
+                android:layout_weight="2"
+                android:layout_width="0sp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+                <TextView
+                    android:paddingRight="20sp"
+                    android:layout_gravity="end|center_vertical"
+                    android:textSize="16sp"
+                    android:id="@+id/toolbar_edit_weight"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    android:text="@string/edit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/empty_view_course_dir"
+        android:gravity="center_horizontal"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="10sp"
+                android:paddingBottom="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opps No Catogeries Yet ..."/>
+
+            <TextView
+                android:id="@+id/empty_btn_course_dir"
+                android:padding="8sp"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + Initalize Category"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/gradeProgress"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_gravity="center"
+        android:paddingTop="30sp">
+
+        <edu.umd.cs.gradeculator.GradeProcessBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            apsv_preview_bg="#34ffa70b"
+            apsv_preview_colors="@array/devlight"
+            apsv_model_bg_enabled="false"/>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:paddingTop="140sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17.5dip"
+                    android:gravity="center"
+                    android:shadowColor="#64000000"
+                    android:shadowDx="0"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:text="@string/max"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/max_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17.5dip"
+                    android:gravity="center"
+                    android:shadowColor="#64000000"
+                    android:shadowDx="0"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:text=""
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"/>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17.5dip"
+                    android:gravity="center"
+                    android:shadowColor="#64000000"
+                    android:shadowDx="0"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:text="@string/cur"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/cur_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17.5dip"
+                    android:gravity="center"
+                    android:shadowColor="#64000000"
+                    android:shadowDx="0"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:text=""
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17.5dip"
+                    android:gravity="center"
+                    android:shadowColor="#64000000"
+                    android:shadowDx="0"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:text="@string/goal"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/goal_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17.5dip"
+                    android:gravity="center"
+                    android:shadowColor="#64000000"
+                    android:shadowDx="0"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:text=""
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_course_dir">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

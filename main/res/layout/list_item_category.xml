@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/course_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/course_list">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:weightSum="8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_weight="6"
+                android:textSize="16sp"
+                android:paddingTop="15sp"
+                android:paddingLeft="20sp"
+                android:textColor="@color/text_color"
+                android:id="@+id/list_item_category_name"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                tools:text="@string/assignment_name"/>
+
+            <TextView
+                android:textColor="@color/text_color"
+                android:layout_weight="2"
+                android:layout_gravity="end"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="15sp"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/list_item_category_possible"
+                tools:text="@string/current_grade_label"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingBottom="15sp"
+            android:weightSum="8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:paddingLeft="20sp"
+                android:textColor="@color/text_color"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="@string/due" />
+
+            <TextView
+                android:layout_weight="5"
+                android:textSize="12sp"
+                android:textColor="@color/text_color"
+                android:id="@+id/list_item_category_due"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                tools:text="@string/due_date" />
+
+            <TextView
+                android:paddingRight="2.5sp"
+                android:layout_weight="0.85"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:textSize="12sp"
+                android:textColor="@color/text_color"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="@string/grade_title" />
+
+            <TextView
+                android:id="@+id/list_item_category_points"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:layout_weight="1.15"
+                android:textSize="12sp"
+                android:textColor="@color/text_color"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                tools:text="@string/grade" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/hint_color" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

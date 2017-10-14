@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">Gradeculator</string>
+
+    <string name="list_course_title">Course title</string>
+    <string name="list_course_identifier">Course Identifier</string>
+
+    <string name="course_name">Data Structure</string>
+
+    <integer name = "default_gpa">3</integer>>
+
+    <string name="credit_label">Credits</string>
+
+    <string name="title_label">Course Title</string>
+
+    <string name="name_label">Course Name</string>
+
+
+    <string name="desired_grade_label">Goal</string>>
+
+    <string name="GradeName_label">Name</string>
+
+    <string name="GradeName_hint">Exam 1</string>
+
+
+    <string name="dueDate_label">Due</string>
+
+    <string name="dueDate_hint">01/01/2017</string>
+
+    <string name="totalPoints_label">Total Points</string>
+
+    <string name="totalPoints_hint">Optional</string>
+
+    <string name="grade_label">Grade</string>
+
+    <string name="weight_label">Weight</string>
+
+    <string name="weight_hint">2</string>
+
+    <string name="point_hint">Optional</string>
+
+    <string name="status_label">Completed</string>
+
+    <string name="session_label">Section</string>
+
+    <string name="session_hint">Exam</string>
+
+    <string name="course_title">CMSC420</string>
+
+    <string name="save_button">SAVE</string>
+    <string name="cancel_button">CANCEL</string>
+
+    <string name="create_course_button">Create Course</string>
+    <string name="delete_course_button">Delete Course</string>
+
+    <string name="save_course_button">Save Course</string>
+    <string name="cancel_course_button">Cancel Course</string>
+
+    <string name="points_label">Possible Points</string>>
+
+    <string name="back_button">Back Button</string>
+    <string name="add_button">Add Button</string>
+    <string name="edit_button">Edit button</string>
+
+    <string-array name="grade_array">
+        <item>A+</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>C+</item>
+        <item>C</item>
+        <item>C-</item>
+    </string-array>
+
+    <string-array name="month_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="year_array">
+        <item>2017</item>
+        <item>2018</item>
+    </string-array>
+
+    <string name="category_back">Back</string>
+    <string name="category_edit">Edit</string>
+    <string name="category_add">Add</string>
+
+    <string name="confirm_remove">Confirm</string>
+    <string name="cancel_remove">Cancel</string>
+
+    <string name = "addCourseNote">
+        Grades are calculated using the following scale:\n
+        • 97-100 = A+; 94-96.9 = A,  90-93.9 = A-;\n
+        • 87-89.9 = B+; 84-86.9 = B; 80-83.9 = B-;\n
+        • 77-79.9 = C+; 74-76.9 = C; 70-73.0 = C-;\n
+        • 67-69.9 = D+; 64-66.9 = D;60-63.9 = D-;\n
+        • 59.9 and lower = F</string>
+
+    <string name="current_grade_label">20%</string>
+
+    <string name="equal_weight">Equal Weight?</string>
+
+    <string name="okay">Okay</string>
+	<string-array name="status_array">
+        <item>EXAM</item>
+        <item>QUIZ</item>
+        <item>ASSIGNMENT</item>
+        <item>PROJECT</item>
+        <item>EXTRA</item>
+    </string-array>
+
+    <string name="iGradeName_label">Grade Name</string>
+    <string name="iGradeName_hint">Grade Name</string>
+    <string name="idueDate_label">Due Date</string>
+    <string name="idueDate_hint">Due Date</string>
+    <string name="itotalPoints_label">Point Possible</string>
+    <string name="itotalPoints_hint">Point Possible</string>
+    <string name="ipoint_label">Points</string>
+    <string name="ipoint_hint">Points</string>
+    <string name="istatus_label">Status</string>
+    <string name="iweight_label">Weight</string>
+    <string name="iweight_hint">Weight</string>
+
+    <string name="class_info">
+        • For category that are not exist in the course, simply leave it blank or enter a value of 0.\n• Toggle button check if the individual tasks in each category has it own weight or they are equally weighted
+    </string>
+
+    <string name="exam">Exam</string>
+    <string name="quiz">Quiz</string>
+    <string name="assignment">Assignment</string>
+    <string name="project">Project</string>
+    <string name="extra_credit">Extra Credit</string>
+
+    <string name="category_name">Project</string>
+    <string name="category_item">4 Projects</string>
+
+    <string name="point_label">100</string>
+
+    <string name="assignment_name">Exam 1</string>
+    <string name="due_date">April 1</string>
+    <string name="due">Due:</string>
+    <string name="grade_title">Grade:</string>
+    <string name="goal_title">Goal:</string>
+    <string name="grade">18%</string>
+
+    <string name="reminder_notification">Gradeculator Friendly Reminder</string>
+    <string name="course">Courses</string>
+    <string name="reminder_notification_content">is below your expectation!</string>
+    <string name="empty_main">Opps No Classes Yet ...</string>
+
+    <string name="empty_main_btn"> + Create New Class</string>
+    <string name="save_btn">Save</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="edit_btn">Edit</string>
+    <string name="empty_catogery_btn"> + Create New Assignment</string>
+    <string name="empty_category">Opps No Assignments Yet ...</string>
+
+    <string name="empty_course_btn"> + Initalize Category</string>
+    <string name="empty_course">Opps No Catogeries Yet ...</string>
+    <string name="weight">Weights</string>
+    <string name="max">Maximum</string>
+    <string name="cur">Current</string>
+    <string name="goal">Goal</string>
+
+</resources>
